@@ -16,5 +16,10 @@ public class dz4 {
             }
         }
         System.out.println("The sum is " + sum);
+         for (int t = 0; t < Arr.length; t++) {
+            if(Arr[t]%2==0) {
+                System.out.println(Arr[t] + "");
+            }
+        }
     }
 }
