@@ -11,6 +11,7 @@ public class Dz10method {
     private static void dz10method(String str) {
                 String[] arrOfStr = str.replace(",","").replace(".", "").split(" ");
                 Set<String> set=new HashSet<>(Arrays.asList(arrOfStr));
-                for (String a:set) System.out.println(a);
+                for (String a:set)
+                    System.out.println(StringUtils.capitalizeFirstLetter(a));
         }
     }
