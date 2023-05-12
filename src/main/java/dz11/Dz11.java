@@ -1,10 +1,13 @@
 package dz11;
 
+import com.sun.source.tree.Tree;
+import org.apache.maven.shared.utils.StringUtils;
+
 import java.util.*;
 
 public class Dz11 {
     public static void main(String[] args) {
-        Map<Integer, String> intMap=new HashMap<>();
+        Map<Integer, String> intMap=new TreeMap<>();
         intMap.put(1, "cat");
         intMap.put(99, "dogs");
         intMap.put(3, "tigers");
@@ -12,11 +15,8 @@ public class Dz11 {
         intMap.put(100, "lion");
         intMap.put(60, "bird");
         intMap.put(2, "parrot");
-        intMap = sortByKeys(intMap);
-        System.out.println(intMap);
-    }
-
-    private static Map<Integer, String> sortByKeys(Map<Integer, String> unsortedMap) {
-        return new TreeMap<>(unsortedMap);
+        for (Integer a:intMap.keySet()) {
+            System.out.println(a+"="+intMap.get(a));
+        }
     }
 }
